@@ -22,18 +22,18 @@ public class Main {
         } else
         System.out.println(year + " год не является високосным");
         System.out.println("задача 4");
-        int deliveryDistance = 120;
-        if (deliveryDistance <= 20) {
-            System.out.println("потребуется 1 день");
+        int deliveryDistance = 50;
+        int deliveryTime = 1;
+        if (deliveryDistance < 20) {
+            System.out.println("потребуется дней: " + deliveryTime);
         }
         if (deliveryDistance >= 20 && deliveryDistance <= 60) {
-            System.out.println("потребуется 2 дня");
+            System.out.println("потребуется дней: " + (deliveryTime + 1));
         }
-        if (deliveryDistance >= 60 && deliveryDistance <=100) {
-            System.out.println("потребуется 3 дня");
-        }
-        if (deliveryDistance > 100) {
-            System.out.println("потребуется 4 дня или более");
+        if (deliveryDistance > 60 && deliveryDistance <=100) {
+            System.out.println("потребуется дней: " + deliveryTime + 2);
+        }else {
+            System.out.println("доставки нет");
         }
         System.out.println("задача 5");
         int monthNumber = 11;
